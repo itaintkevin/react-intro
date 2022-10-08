@@ -1,13 +1,14 @@
 import { Routes, Route, Link } from "react-router-dom";
+import Hero from './components/Hero';
+import About from './components/About';
 
 function App() {
   return (
-    <div className="flex justify-center items-center h-screen w-screen">
-      <h1 className="text-center text-7xl">Hello React</h1>
-      {/* <Routes>
-        <Route path="/" element={<Home />} />
+    <div>
+      <Routes>
+        <Route path="/" element={<Hero />} />
         <Route path="about" element={<About />} />
-      </Routes> */}
+      </Routes>
     </div>
   );
 }
