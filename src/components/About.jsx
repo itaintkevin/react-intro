@@ -3,6 +3,7 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import FuncComp from './FuncComp'
 import ClassComp from './ClassComp'
+import Card from './Card.jsx'
 
 const About = () => {
     const [resourceType, setResourceType] = useState('posts')
@@ -25,7 +26,7 @@ const About = () => {
     return (
         <div className='flex flex-col justify-center items-center h-screen w-full overflow-hidden'>
             <Navbar />
-            <div className="flex flex-col items-center justify-start h-screen w-full">
+            <div className="flex flex-col items-center justify-center h-screen w-full">
                 <div className='text-3xl my-10 rounded-2xl shadow-md bg-slate-300 px-5 py-2'>useEffect - API Calling</div>
                 <div className='text-xl flex'>
                     <button onClick={() => setResourceType('posts')} className='mx-3 bg-slate-300 shadow-md rounded-2xl px-5 py-2'>Posts</button>
@@ -35,6 +36,11 @@ const About = () => {
                 <h1 className='text-5xl my-12'>Resource Type : {resourceType}</h1>
                 <FuncComp/>
                 <ClassComp/>
+                <div className='flex my-5'>
+                    <Card name="Water" quantity="500ml" price="Rs.20"/>
+                    <Card name="Pepsi" quantity="500ml" price="Rs.40"/>
+                    <Card name="Mentos" quantity="50g" price="Rs.10"/>
+                </div>
             </div>
             <Footer />
         </div>
