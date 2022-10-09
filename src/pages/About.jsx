@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import Navbar from './Navbar'
-import Footer from './Footer'
-import FuncComp from './FuncComp'
-import ClassComp from './ClassComp'
-import Card from './Card.jsx'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
+import FuncComp from '../components/FuncComp'
+import ClassComp from '../components/ClassComp'
+import Card from '../components/Card.jsx'
 
 const About = () => {
     const [resourceType, setResourceType] = useState('posts')
